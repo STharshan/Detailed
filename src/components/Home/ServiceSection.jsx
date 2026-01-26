@@ -140,7 +140,7 @@ const ServiceSection = () => {
                 key={index}
                 className="relative min-w-[300px] md:min-w-[400px] h-[520px] rounded-lg shadow-lg border-primary border
               overflow-hidden group
-             hover:scale-105 active:scale-105 bg-white hover:shadow-primary hover:border-primary/80 dark:bg-black/90 transition-all duration-300"
+             hover:scale-105 active:scale-105  hover:shadow-primary hover:border-primary/80 bg-black/90 transition-all duration-300"
                 data-aos="fade-up"
                 data-aos-delay={index * 150} // staggered animation for each card
               >
@@ -149,7 +149,7 @@ const ServiceSection = () => {
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="absolute inset-0 w-[95%] mt-15 mx-auto h-55 object-cover"
+                    className="absolute inset-0 w-[78%] mt-15 mx-auto h-55 object-cover"
                     onError={(e) => {
                       e.currentTarget.onerror = null;
                       e.currentTarget.src = "/logo.png"; // fallback logo
